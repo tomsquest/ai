@@ -29,7 +29,8 @@ twitter_username: thomasqueste
 github_username:  tomsquest
 
 # Build settings
-theme: minima
+#theme: minima
+remote_theme: YoussefRaafatNasry/portfolYOU@v1.0.0
 plugins:
   - jekyll-feed
 
