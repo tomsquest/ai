@@ -16,5 +16,5 @@ $ asdf install $(cat .tool-versions)
 
 $ bundle install
 
-$ jekyll serve
+$ bundle exec jekyll serve --livereload
 ```
