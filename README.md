@@ -4,8 +4,8 @@ Welcome to my experiments and projects around AI, Deep-Learning and LLM.
 
 ## This site setup
 
-This site is hosted on Github Pages as a Jekyll-generated website.
-After a push, Github will rebuild the site at https://ai.tomsquest.com.
+This site is hosted on GitHub Pages as a Jekyll-generated website.
+After a push, GitHub will rebuild the site at https://ai.tomsquest.com.
 
 ```bash
 # Dependencies
