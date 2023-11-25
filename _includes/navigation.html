@@ -1,4 +1,4 @@
-<nav class="bd-navbar navbar is-light has-shadow" role="navigation" aria-label="main navigation">
+<nav class="bd-navbar navbar has-shadow" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a class="navbar-item" href="{{ site.url }}">
       <img src="/assets/images/logo_header.png" alt="logo">
@@ -16,7 +16,7 @@
       <div class="navbar-item">
         <div class="buttons">
           {% for item in site.data.navigation %}
-            <a href="{{ item.link }}" class="button {% if page.url == item.link %}is-dark{% else %}{% endif %}">
+            <a href="{{ item.link }}" class="button {% if page.url == item.link %}is-dark{% else %}is-danger{% endif %}">
               {{ item.name }}
             </a>
           {% endfor %}
