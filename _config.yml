@@ -1,12 +1,20 @@
-title: Tom's Quest AI
+title: ai.tomsquest.com
 email: tom@tomsquest.com
 description: >-
   AI Experiments and Projects
 baseurl: ""
 url: https://ai.tomsquest.com
 domain: ai.tomsquest.com
+logo: /assets/images/logo.png
+social:
+  name: Thomas Queste
+  links:
+    - https://twitter.com/thomasqueste
+    - https://www.linkedin.com/in/thomasqueste
+    - https://github.com/tomsquest/
+    - https://keybase.io/thomasqueste
 plugins:
-  - jekyll-feed
+  - jekyll-seo-tag
 collections:
   projects:
     output: true
