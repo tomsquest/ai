@@ -1,27 +1,6 @@
-nav {
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-
-    li {
-      display: inline-block;
-
-      .current {
-        color: green;
-      }
-
-      a {
-        display: block;
-        padding: 6px 12px;
-        text-decoration: none;
-        color: #333;
-
-        &:hover {
-          color: #fff;
-          background-color: #333;
-        }
-      }
-    }
+.bd-navbar {
+  padding: 1rem 2rem;
+  .navbar-brand img {
+    max-height: 3em;
   }
 }

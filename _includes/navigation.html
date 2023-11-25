@@ -1,9 +1,27 @@
-<nav>
-  <ul>
-    {% for item in site.data.navigation %}
-      <li>
-        <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
-      </li>
-    {% endfor %}
-  </ul>
+<nav class="bd-navbar navbar is-light has-shadow" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="{{ site.url }}">
+      <img src="/assets/images/logo_header.png" alt="logo">
+    </a>
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="theNavBar">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="theNavBar" class="navbar-menu">
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          {% for item in site.data.navigation %}
+            <a href="{{ item.link }}" class="button {% if page.url == item.link %}is-dark{% else %}{% endif %}">
+              {{ item.name }}
+            </a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
 </nav>

@@ -2,14 +2,18 @@
 title: Projects
 permalink: /projects/
 ---
-<h1>{{ page.title }}</h1>
+<section class="section is-large">
+  <h1 class="title">{{ page.title }}</h1>
+  <h2 class="subtitle">
+    Building things, breaking stuff, learning along the way...
+  </h2>
 
-<ul>
-  {% for project in site.projects %}
+  <ul>
+    {% for project in site.projects %}
     <li>
       <h2><a href="{{ project.url }}">{{ project.name }}</a></h2>
-      <h3>{{ project.position }}</h3>
-      <p>{{ project.content | markdownify }}</p>
+      <h3>{{ project.description | markdownify }}</h3>
     </li>
-  {% endfor %}
-</ul>
+    {% endfor %}
+  </ul>
+</section>
