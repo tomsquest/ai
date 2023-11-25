@@ -15,6 +15,7 @@ social:
     - https://keybase.io/thomasqueste
 plugins:
   - jekyll-seo-tag
+  - jekyll-sitemap
 collections:
   projects:
     output: true
