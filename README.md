@@ -1,6 +1,9 @@
 # AI Experiments
 
-Welcome to my experiments and projects around AI, Deep-Learning and LLM.
+Welcome to my experiments and projects around AI, Deep-Learning and LLM.  
+Visit: https://ai.tomsquest.com/
+
+[![ai.tomsquest.com/](assets/images/logo.png)](https://ai.tomsquest.com/)
 
 ## This site setup
 
