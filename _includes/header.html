@@ -17,7 +17,7 @@
       <div class="navbar-item">
         <div class="buttons">
           {% for item in site.data.navigation %}
-            <a href="{{ item.link }}" class="button {% if page.url == item.link %}is-dark{% else %}is-danger{% endif %}">
+            <a href="{{ item.link }}" class="button {% if page.url == item.link %}is-danger{% else %}is-dark{% endif %}">
               {{ item.name }}
             </a>
           {% endfor %}
