@@ -2,18 +2,63 @@
 title: Projects
 permalink: /projects/
 ---
-<section class="section is-large">
+<section class="section">
   <h1 class="title">{{ page.title }}</h1>
   <h2 class="subtitle">
-    Building things, breaking stuff, learning along the way...
+    Building things, breaking stuff, learning along the way...<br/>
+    Demos, presentations, and more.
   </h2>
-
-  <ul>
-    {% for project in site.projects %}
-    <li>
-      <h2><a href="{{ project.url }}">{{ project.name }}</a></h2>
-      <h3>{{ project.description | markdownify }}</h3>
-    </li>
-    {% endfor %}
-  </ul>
 </section>
+<section class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        <ul>
+          {% for project in site.projects %}
+          <div class="card">
+            <div class="card-image">
+              <a href="{{ project.url }}">
+                <figure class="image is-4by3">
+                  <img src="/assets/images/tools-recognizer/cover.jpg" alt="project image">
+                </figure>
+              </a>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+                  <figure class="image is-48x48">
+                    <img src="/assets/images/logo.svg" alt="logo" width="96" height="96">
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <p class="title is-4">{{ project.name }}</p>
+                  <p class="subtitle is-6">
+                    <span class="tag is-danger">image-recognition</span>
+                    <span class="tag is-danger">fast.ai</span>
+                    <span class="tag is-danger">gradio</span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="content">
+                {{ project.description | markdownify }}
+              </div>
+            </div>
+            <footer class="card-footer">
+              <p class="card-footer-item">
+                📅 2023
+              </p>
+              <p class="card-footer-item">
+                <a href="{{ project.url }}" class="button is-danger">DETAILS + DEMO</a>
+              </p>
+            </footer>
+          </div>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="column"></div>
+    </div>
+  </div>
+</section>
+<section class="section"></section>
+<section class="section"></section>
